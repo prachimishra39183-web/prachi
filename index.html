@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Diaries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="navbar">
+    <img src="data:image/png;base64,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" alt="Campus Diaries Logo">
+    <div>
+      <h1>Usha Mittal Institute of Technology</h1>
+      <h class="hii">Campus Diaries</h>
+    </div>
+
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Events</a>
+    <a href="#">My Diary</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+<br>
+<h2 class="h2">RECENT EVENTS</h2>
+<section class="slider">
+    <div class="slides">
+        <img src="https://static.wixstatic.com/media/5f5e6b_500dfaebb4b446ac929a811299850c7e~mv2.jpeg/v1/crop/x_202,y_0,w_627,h_581/fill/w_598,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202020-06-11%20at%203_44_24%20PM_.jpeg" class="slide active">
+        <img src="https://static.wixstatic.com/media/38f414_91ba393eb3a54cc6a5d1c8ee7eebe712~mv2.jpeg/v1/crop/x_56,y_0,w_554,h_458/fill/w_598,h_480,al_c,lg_1,q_80,enc_avif,quality_auto/WhatsApp%20Image%202021-06-15%20at%203_30_01%20PM%20.jpeg" class="slide">
+        <img src="https://static.wixstatic.com/media/bb8ca0_87e813ebb5ee463eb615c3f93da207c1~mv2.jpg/v1/crop/x_126,y_0,w_652,h_604/fill/w_598,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fresher_edited.jpg" class="slide">
+    </div>
+
+    <!-- Navigation buttons -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+</section>
+
+<!-- ================= CATEGORY FILTER ================= -->
+<section class="filters">
+  <button class="active">All Events</button>
+  <button>🎓 Technical</button>
+  <button>🎭 Cultural</button>
+  <button>🏆 Sports</button>
+  <button>🛠 Workshops</button>
+</section>
+
+<!-- ================= HAPPENING TODAY ================= -->
+<section class="container">
+  <h2>🔥 Happening Today</h2>
+  <p class="subtitle">Don't miss these live events happening right now on campus</p>
+
+  <div class="card-grid">
+    <div class="event-card live">
+      <span class="live-badge">LIVE TODAY</span>
+      <h3>Campus Tech Meetup</h3>
+      <p>Meet local tech leaders and discuss innovation</p>
+      <p class="time">⏰ 02:00 PM · Ongoing</p>
+      <span class="tag">Technical</span>
+      
+    </div>
+
+    <div class="event-card live">
+      <span class="live-badge">LIVE TODAY</span>
+      <h3>Coding Challenge</h3>
+      <p>Compete in live coding challenges with prizes</p>
+      <p class="time">⏰ 03:00 PM · Ongoing</p>
+      <span class="tag">Technical</span>
+      <button class="btn closed">Registration Closed</button>
+    </div>
+
+    <div class="event-card live">
+      <span class="live-badge">LIVE TODAY</span>
+      <h3>Cultural Showcase</h3>
+      <p>Experience diverse cultural performances</p>
+      <p class="time">⏰ 07:00 PM · Upcoming</p>
+      <span class="tag">Cultural</span>
+      <button  class="btn open">Register Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED EVENTS ================= -->
+<section class="container">
+  <h2>Featured & Upcoming Events</h2>
+  <p class="subtitle">Showing 4 events in selected category</p>
+
+  <div class="card-grid">
+    <div class="event-card">
+      <h3>Web Development Workshop</h3>
+      <p>Learn modern web development</p>
+      <p class="time">📅 15/07/2026 · 7 days away</p>
+      <button>Register Now</button>
+      <p>Orgaised by CSI Council</p>
+    </div>
+
+    <div class="event-card">
+      <h3>Campus Tech Meetup</h3>
+      <p>Discuss innovation with experts</p>
+      <p class="time">📅 17/07/2026 · 9 days away</p>
+      <button>Register Now</button>
+         <p>Orgaised by  Council</p>
+    </div>
+
+    <div class="event-card">
+      <h3>Coding Challenge</h3>
+      <p>Compete & win exciting prizes</p>
+      <p class="time">📅 20/07/2026 · 12 days away</p>
+      <button>Register Now</button>
+         <p>Orgaised by ACM Council</p>
+    </div>
+
+    <div class="event-card">
+      <h3>AI & ML Workshop</h3>
+      <p>Deep dive into AI fundamentals</p>
+      <p class="time">📅 25/07/2026 · 17 days away</p>
+      <button>Register Now</button>
+         <p>Orgaised by E-CELL Council</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COUNCIL & CLUB EVENTS ================= -->
+<section class="container">
+  <h2>Council & Club Events</h2>
+
+  <div class="card-grid clubs">
+    <div class="club-card blue">
+      <h3>NSS</h3>
+      <p>Community service & social responsibility</p>
+      <button class="view-events-btn">View Events</button>
+      <ul class="events-list" style="display: none;">
+        <li>Tree Plantation Drive on: 8 novemeber 2026</li>
+        <li>Blood Donation Camp on: 5 march 2026</li>
+        <li>Cleanliness Awareness Program on: 5 novemeber 2026</li>
+      </ul>
+    </div>
+
+    <div class="club-card purple">
+      <h3>CSI</h3>
+      <p>Tech talks, hackathons & coding competitions</p>
+      <button class="view-events-btn">View Events</button>
+      <ul class="events-list" style="display: none;">
+        <li>Annual Hackathon on: 25 novemeber 2026</li>
+        <li>Tech Talk Series on: 5 December 2026</li>
+        <li>CodeFest Competition on: 5 novemeber 2026</li>
+      </ul>
+    </div>
+
+    <div class="club-card orange">
+      <h3>Cultural Committee</h3>
+      <p>Music, dance, drama & arts</p>
+      <button class="view-events-btn">View Events</button>
+      <ul class="events-list" style="display: none;">
+        <li>Dance Competition on : 12 march 2026</li>
+        <li>Drama Night on:30 january 2026</li>
+        <li>Art Exhibition on: 3 novemeber 2026</li>
+      </ul>
+    </div>
+
+    <div class="club-card green">
+      <h3>Sports Committee</h3>
+      <p>Sports tournaments & fitness activities</p>
+      <button class="view-events-btn">View Events</button>
+      <ul class="events-list" style="display: none;">
+        <li>Football Tournament on :26 jan 2026</li>
+        <li>Annual Sports Meet on: 15 feb 2026</li>
+        <li>Yoga & Fitness Session on :24 march 2026</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h2>📘 Campus Diaries</h2>
+      <p>Your journey. Your events. Your victories.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#">Events</a>
+      <a href="#">Clubs</a>
+      <a href="#">My Diary</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Categories</h4>
+      <a href="#">Technical</a>
+      <a href="#">Cultural</a>
+      <a href="#">Sports</a>
+      <a href="#">Workshops</a>
+    </div>
+
+    <div class="footer-social">
+      <h4>Connect</h4>
+      <p>📧 campusdiaries@gmail.com</p>
+      <p>📍 Your College Name</p>
+      <div class="social-icons">
+        <span>🐦</span>
+        <span>📘</span>
+        <span>📸</span>
+        <span>💼</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Campus Diaries • Built with ❤️ by Students
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
