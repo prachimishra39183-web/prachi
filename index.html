@@ -31,6 +31,7 @@
     <div class="slides">
         <img src="https://static.wixstatic.com/media/5f5e6b_500dfaebb4b446ac929a811299850c7e~mv2.jpeg/v1/crop/x_202,y_0,w_627,h_581/fill/w_598,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202020-06-11%20at%203_44_24%20PM_.jpeg" class="slide active">
         <img src="https://static.wixstatic.com/media/38f414_91ba393eb3a54cc6a5d1c8ee7eebe712~mv2.jpeg/v1/crop/x_56,y_0,w_554,h_458/fill/w_598,h_480,al_c,lg_1,q_80,enc_avif,quality_auto/WhatsApp%20Image%202021-06-15%20at%203_30_01%20PM%20.jpeg" class="slide">
+      <img src="https://static.wixstatic.com/media/896af0_95b58ab707a246c495ff0573f85f915e~mv2.jpg/v1/fill/w_826,h_535,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/896af0_95b58ab707a246c495ff0573f85f915e~mv2.jpg" class="slide">
         <img src="https://static.wixstatic.com/media/bb8ca0_87e813ebb5ee463eb615c3f93da207c1~mv2.jpg/v1/crop/x_126,y_0,w_652,h_604/fill/w_598,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fresher_edited.jpg" class="slide">
     </div>
 
@@ -42,10 +43,10 @@
 <!-- ================= CATEGORY FILTER ================= -->
 <section class="filters">
   <button class="active">All Events</button>
-  <button>🎓 Technical</button>
-  <button>🎭 Cultural</button>
-  <button>🏆 Sports</button>
-  <button>🛠 Workshops</button>
+  <button>🎓 Technical event projects</button>
+  <button>🎭 Cultural projects and rewards</button>
+  <button>🏆 Sports legacy</button>
+  <button>🛠 Workshops </button>
 </section>
 
 <!-- ================= HAPPENING TODAY ================= -->
@@ -78,7 +79,37 @@
       <p>Experience diverse cultural performances</p>
       <p class="time">⏰ 07:00 PM · Upcoming</p>
       <span class="tag">Cultural</span>
-      <button  class="btn open">Register Now</button>
+      <button1 onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button1>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Branch</b></label>
+      <input type="password" placeholder="Enter Branch" name="psw" required>
+        
+      <label for="psw"><b>STUDENT ID</b></label>
+      <input type="password" placeholder="Enter ID no" name="psw" required>
+      <button1 type="submit">Login</button1>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button1 type="button1" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button1>
+      <span class="psw">Forgot <a href="#"> ID?</a></span>
+    </div>
+  </form>
+</div>
+    </div>
     </div>
   </div>
 </section>
